@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="20px"
+    tools:context="com.dong.li.test.MainActivity">
+    <TextView
+        android:id="@+id/wps"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="50dp"
+        android:text="WPS"
+        android:textAlignment="center"
+        android:textSize="30dp"/>
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/wps"
+        android:text="一个账号，开启云端办公"
+        android:textAlignment="center"
+        android:textSize="16dp"/>
+    <EditText
+        android:id="@+id/userId"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:hint="邮箱或手机号"
+        android:background="@drawable/edit_bg"
+        android:layout_below="@id/description"
+        android:layout_marginTop="32dp" />
+    <EditText
+        android:id="@+id/passwd"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:hint="密码"
+        android:background="@drawable/edit_bg"
+        android:layout_below="@id/userId"
+        android:layout_marginTop="10dp" />
+    <Button
+        android:id="@+id/logOn"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="登录"
+        android:textSize="20dp"
+        android:background="@drawable/edit_bg"
+        android:layout_below="@id/passwd"
+        android:layout_marginTop="32dp" />
+
+</RelativeLayout>
